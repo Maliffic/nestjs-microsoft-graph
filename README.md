@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+</p>
+
 ## Description
 
 [Microsoft Graph](https://docs.microsoft.com/en-us/graph/overview?view=graph-rest-1.0) module for [Nest](https://github.com/nestjs/nest) framework (node.js)
