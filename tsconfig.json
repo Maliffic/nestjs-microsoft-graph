@@ -1,0 +1,23 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "target": "es6",
+    "sourceMap": false,
+    "esModuleInterop": true,
+    "noEmitHelpers": true,
+    "lib": ["es2019", "esnext"],
+    "skipLibCheck": true,
+    "paths": {
+      "tslib": ["node_modules/tslib/tslib.d.ts"]
+    }
+  },
+  "include": ["libs/**/*"],
+  "exclude": ["node_modules", "webpack.config.js"]
+}

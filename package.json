@@ -1,0 +1,55 @@
+{
+  "name": "nest-azure-storage",
+  "version": "1.0.3",
+  "description": "An Azure Storage module for Nest framework (node.js)",
+  "license": "MIT",
+  "author": "Vishal Isharani",
+  "scripts": {
+    "precommit": "lint-staged",
+    "prettier": "prettier lib/**/*.ts --write && git status",
+    "build": "npm run build:lib",
+    "build:lib": "tsc -p tsconfig.json",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run lint"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^7.5.1",
+    "@nestjs/core": "^7.5.1",
+    "@nestjs/platform-express": "^7.5.1"
+  },
+  "devDependencies": {
+    "@microsoft/microsoft-graph-types": "^1.26.0",
+    "@nestjs/common": "^7.5.1",
+    "@nestjs/core": "^7.5.1",
+    "@nestjs/platform-express": "^7.5.1",
+    "@types/node": "^14.11.2",
+    "gts": "^3.0.2",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.7",
+    "mock-stdin": "^1.0.0",
+    "prettier": "^2.1.2",
+    "reflect-metadata": "^0.1.12",
+    "ts-jest": "^25.0.0",
+    "ts-morph": "5.0.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@microsoft/microsoft-graph-client": "^2.1.1"
+  },
+  "main": "./dist/index.js",
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

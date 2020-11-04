@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "nestjs-azure-graph": {
+      "type": "library",
+      "root": "libs/",
+      "entryFile": "index",
+      "sourceRoot": "libs/",
+      "compilerOptions": {
+        "tsConfigPath": "tsconfig.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}

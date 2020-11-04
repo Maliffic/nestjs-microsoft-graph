@@ -1,0 +1,2 @@
+export const MS_GRAPH_MODULE_OPTIONS = 'MS_GRAPH_MODULE_OPTIONS';
+export const CLIENT = 'CLIENT';
